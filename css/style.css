@@ -1,0 +1,61 @@
+/*DEMO style sheets */
+
+h1 {
+    color: red;
+}
+h2 {
+    color: blue;
+    margin-bottom: 30px;
+}
+
+.greentext {
+    color: green
+}
+
+#purpletext{
+    color: purple
+}
+
+div > p{
+    color: brown;
+    padding: 50px 10px 10px 20px;
+    margin: 50px;
+    border: 1px solid brown;
+}
+
+/********************** styling form   */
+.webform {
+    background-color: tan;
+    max-width: 300px;
+}
+
+.small-padding {
+    padding: 10px;
+}
+
+.medium-padding {
+    padding: 20px 20px 10px 10px;
+}
+
+input [type ="text"] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+button [type ="submit"] {
+    background-color: #04AA6D;
+    width: 100%;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button [type ="submit"]:hover{
+    background-color: #04AA6D;
+}
