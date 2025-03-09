@@ -1,28 +1,25 @@
 /* **** opdeling af hjemmeside */
 header {
     width: 100%;
-    border: 1px solid green;
+
 }
 
 main {
     width: 100%;
-    border: 1px solid blue;
     padding: 20px;
     margin-top: 20px;
 }
 
 footer {
     width: 100%;
-    border: 1px solid red;
     margin-top: 20px;
     padding: 20px;
 }
 
-#page{
+#page {
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid green;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -31,17 +28,25 @@ footer {
 body {
     display: flex;
     justify-content: center;
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    font-family: Arial sans-serif;
+}
+
+h1, h2, p, li, a {
+    color: white; /* Gør teksten hvid for at stå tydeligt frem */
 }
 
 /* *** overskrifter **/
 h1 {
     text-align: center;
     font-size: clamp(1em, 1.5em, 1.5em);
-    color: green;
+    color: white;
 }
 
 /* ******* header image */
-.header-image{
+.header-image {
     width: 100%;
     max-width: 600px;
     justify-items: center;
@@ -50,12 +55,13 @@ h1 {
 /* Dropdown-menu styling */
 .dropdown {
     position: relative;
+    color: black;
 }
 
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: blue;
     border: 1px solid #ccc;
     padding: 10px;
     list-style: none;
@@ -71,7 +77,7 @@ h1 {
 
 .dropdown-menu li a {
     text-decoration: none;
-    color: blue;
+    color: white;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -79,19 +85,21 @@ h1 {
 }
 
 /* *** Navigations faner **/
-nav ul{
+nav ul {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
     gap: 15px;
-    background-color: blueviolet;
+    background-color: orange;
     justify-content: center;
     align-items: center;
 }
+
 nav ul li {
     margin: 0;
 }
+
 nav ul li a {
     text-decoration: none;
     color: blue;
@@ -105,7 +113,24 @@ nav ul li a:hover {
 
 
 /* ****** Footer buttons ******** */
-.about_button {
+footer {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centrerer horisontalt */
+    align-items: center; /* Centrerer vertikalt */
+    height: 100px; /* Sørger for, at footer har en passende højde */
+    background-color: blue; /* Valgfri baggrundsfarve */
+}
+
+footer .about_button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer .about_button:hover {
+    background-color: darkblue; /* Ændrer farven ved hover */
 }
