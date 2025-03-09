@@ -1,3 +1,4 @@
+/* **** opdeling af hjemmeside */
 header {
     border: 1px solid green;
 }
@@ -12,4 +13,82 @@ footer {
     border: 1px solid red;
     margin-top: 20px;
     padding: 20px;
+}
+
+#page{
+    flex-direction: column;
+    border: 1px solid green;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+/* *** overskrifter **/
+h1 {
+    text-align: center;
+    font-size: clamp(1em, 1.5em, 1.5em);
+    color: green;
+}
+
+/* ******* header image */
+.header-image{
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Dropdown-menu styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: blue;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* *** Navigations faner **/
+@media (max-width: 600px){
+    header nav ul{
+        flex-direction: column;
+    }
+}
+nav {
+    width: 100%;
+    display: flex;
+}
+header nav ul{
+    width: 100%;
+    color: blue;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    background-color: red;
+    justify-content: space-between;
 }
