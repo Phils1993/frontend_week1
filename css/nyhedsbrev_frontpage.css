@@ -133,3 +133,40 @@ footer .about_button {
 footer .about_button:hover {
     background-color: darkblue; /* Ændrer farven ved hover */
 }
+
+/* Placering af søgefelt i højre hjørne */
+/* Placering af søgefelt i højre hjørne */
+#searchBar {
+    position: absolute;
+    top: 20px; /* Justér lodret placering */
+    right: 120px; /* Flyt søgefeltet til venstre for knappen */
+    width: 200px; /* Bredden på søgefeltet */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Placering af søgeknap i højre hjørne */
+#searchResults {
+    margin-top: 20px;
+    background-color: blue;
+    padding: 10px;
+    border: 1px blue solid;
+    border-radius: 5px;
+    color: black;
+}
+
+
+#searchButton {
+    position: absolute;
+    top: 20px; /* Samme lodrette placering som søgefeltet */
+    right: 20px; /* Placer knappen i højre hjørne */
+    padding: 8px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
